@@ -1,0 +1,144 @@
+ @font-face {
+    font-family: 'Girona';
+    src: local('Girona Regular'), local('Girona-Regular'),
+        url('./fonts/Girona.woff2') format('woff2'),
+        url('./fonts/Girona.woff') format('woff'),
+        url('./fonts/Girona.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Girona, sans-serif;
+}
+
+.menu{
+    list-style: none;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 40px 20px;
+}
+
+.text_link{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 900;
+    color: black;
+    margin-right: 10px;
+}
+
+.menu a:hover{
+    color:brown;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1 {
+    color: darkmagenta;
+    font-size: 40px;
+}
+
+h2, h3 {
+    color:darkred;
+    margin-top: 40px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 30px 30px 30px;
+    grid-gap: 30px;
+    width: 100%;
+}
+ 
+.card {
+    /* flex: 0 1 30%; */
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px ;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+    object-position: left;
+}
+
+@media screen and (max-width:800px) {
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    .card{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .card{
+        width: 100%;
+    }
+
+    .menu{
+        flex-wrap: wrap;
+    }
+
+    .text_link{
+        font-size: 21px;
+    }
+
+}
+
+.button_order{
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+    width: 100px;
+    height: 50px;
+    background-color: #e5e5e5;
+    border: 0 solid #e5e5e5;
+    border-radius: 10%;
+    transition: all 0.3s linear;
+    
+}
+
+.button_order:hover{
+    background-color: dodgerblue;
+    transform: scale(1.2, 1.2);
+}
+
+span{
+    font-weight: bold;
+} 
+
+.cotial{
+    display: flex;
+    list-style: none;
+    width: 200px;
+    justify-content: space-between;
+    margin: 20px 0 20px 20px;
+}
+
+.cotial img{
+    width: 30px;
+}
+
+.flowers_text{
+    margin: 10px 0 0 20px;
+}
